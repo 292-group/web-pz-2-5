@@ -1,0 +1,127 @@
+.section__calculator {
+    width: 400px;
+    height: auto;
+    background-color: var(--backgraund);
+    margin: 10% auto;
+    border-radius: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.custom .section__calculator {
+    background-color: var(--backgraund-custom);
+}
+
+.custom_2 .section__calculator {
+    background-color: var(--backgraund-custom_2);
+}
+
+.section__calculator-output {
+    display: flex;
+    justify-content: end;
+    font-size: 90px;
+    font-weight: 200;
+    padding: 80px 4% 4% 4%;
+    color: var(--color-output);
+}
+
+.custom .section__calculator-output {
+    color: var(--color-output-custom);
+}
+
+.custom_2 .section__calculator-output {
+    color: var(--color-output-custom_2);
+}
+
+.section__calculator-button-flex {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 3%;
+}
+
+.section__calculator-button-flex button {
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+    border: none;
+    font-size: 23px;
+}
+
+.section__calculator-button-number {
+    background-color: var(--color-number);
+    color: var(--color-number-num);
+}
+
+.custom .section__calculator-button-number {
+    background-color: var(--color-number-custom);
+    color: var(--color-number-num-custom);
+}
+
+.custom_2 .section__calculator-button-number {
+    background-color: var(--color-number-custom_2);
+    color: var(--color-number-num-custom_2);
+}
+
+#zero {
+    width: 180px;
+    border-radius: 80px;
+}
+
+.section__calculator-button-right {
+    background-color: var(--color-right);
+    color: var(--color-right-num);
+}
+
+.section__calculator-button-right-focus:focus {
+    background-color: var(--color-right-focus);
+    color: var(--color-right-num-focus);
+}
+
+.custom .section__calculator-button-right {
+    background-color: var(--color-right-custom);
+    color: var(--color-right-num-custom);
+}
+
+.custom .section__calculator-button-right-focus:focus {
+    background-color: var(--color-right-focus-custom);
+    color: var(--color-right-num-focus-custom);
+}
+
+.custom_2 .section__calculator-button-right {
+    background-color: var(--color-right-custom_2);
+    color: var(--color-right-num-custom_2);
+}
+
+.custom_2 .section__calculator-button-right-focus:focus {
+    background-color: var(--color-right-focus-custom_2);
+    color: var(--color-right-num-focus-custom_2);
+}
+
+.section__calculator-button-top {
+    background-color: var(--color-top);
+    color: var(--color-top-num);
+}
+
+.custom .section__calculator-button-top {
+    background-color: var(--color-top-custom);
+    color: var(--color-top-num-custom);
+}
+
+.custom_2 .section__calculator-button-top {
+    background-color: var(--color-top-custom_2);
+    color: var(--color-top-num-custom_2);
+}
+
+.btn:hover {
+    transition: 1s;
+    background-color: var(--color-button-hover);
+}
+
+.custom .btn:hover {
+    transition: 1s;
+    background-color: var(--color-button-hover-custom);
+}
+
+.custom_2 .btn:hover {
+    transition: 1s;
+    background-color: var(--color-button-hover-custom_2);
+}

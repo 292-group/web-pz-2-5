@@ -1,0 +1,39 @@
+:root{
+--backgraund:rgb(0, 0, 0);
+--color-number: rgb(68, 68, 68);
+--color-right:rgb(202, 143, 33);
+--color-top: rgb(184, 184, 184);
+--color-output:#fff;
+--color-number-num:#fff;
+--color-right-num:#fff;
+--color-top-num: rgb(0, 0, 0);
+--color-right-focus:rgb(228, 227, 227);
+--color-right-num-focus:rgb(0, 0, 0);
+--color-button-hover:rgb(129, 129, 129);
+
+--backgraund-custom:rgb(182, 182, 182);
+--color-number-custom: rgb(245, 237, 237);
+--color-right-custom:rgb(202, 33, 151);
+--color-top-custom: rgb(69, 112, 119);
+--color-output-custom:rgb(179, 37, 37);
+--color-number-num-custom:rgb(0, 0, 0);
+--color-right-num-custom:rgb(22, 13, 13);
+--color-top-num-custom: rgb(0, 0, 0);
+--color-right-focus-custom:rgb(63, 62, 62);
+--color-right-num-focus-custom:rgb(216, 129, 129);
+--color-button-hover-custom:rgb(129, 129, 129);
+
+--backgraund-custom_2:rgb(206, 203, 52);
+--color-number-custom_2: rgb(35, 58, 107);
+--color-right-custom_2:rgb(255, 84, 5);
+--color-top-custom_2: rgb(198, 94, 216);
+--color-output-custom_2:rgb(0, 0, 0);
+--color-number-num-custom_2:rgb(212, 203, 203);
+--color-right-num-custom_2:rgb(22, 13, 13);
+--color-top-num-custom_2: rgb(0, 0, 0);
+--color-right-focus-custom_2:rgb(85, 85, 85);
+--color-right-num-focus-custom_2:rgb(0, 0, 0);
+--color-button-hover-custom_2:rgb(241, 97, 97);
+
+
+}

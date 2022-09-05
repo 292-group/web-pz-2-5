@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/variables.css">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">Color style:</label>
+    <select name="theme-menu" id="theme-menu">
+        <option id="normal" value="normal">normal</option>
+        <option id="custom" value="custom">custom</option>
+        <option id="custom_2" value="custom_2">custom-2</option>
+    </select>
+    <script src="./js/script_theme.js"></script>
+    <section>
+        <div class="section__calculator">
+            <div class="section__calculator-output">
+                <p>0</p>
+            </div>
+            <div class="section__calculator-buttons">
+                <div class="section__calculator-button-flex">
+                    <button class="ac section__calculator-button-top btn">AC</button>
+                    <button class="section__calculator-button-top btn">+/-</button>
+                    <button class="section__calculator-button-top btn">%</button>
+                    <button class="section__calculator-button-right btn section__calculator-button-right-focus">/</button>
+                </div>
+                <div class="section__calculator-button-flex">
+                    <button class="section__calculator-button-number btn">7</button>
+                    <button class="section__calculator-button-number btn">8</button>
+                    <button class="section__calculator-button-number btn">9</button>
+                    <button class="section__calculator-button-right btn section__calculator-button-right-focus">*</button>
+                </div>
+                <div class="section__calculator-button-flex">
+                    <button class="section__calculator-button-number btn">4</button>
+                    <button class="section__calculator-button-number btn">5</button>
+                    <button class="section__calculator-button-number btn">6</button>
+                    <button class="section__calculator-button-right btn section__calculator-button-right-focus">-</button>
+                </div>
+                <div class="section__calculator-button-flex">
+                    <button class="section__calculator-button-number btn">1</button>
+                    <button class="section__calculator-button-number btn">2</button>
+                    <button class="section__calculator-button-number btn">3</button>
+                    <button class="section__calculator-button-right btn section__calculator-button-right-focus">+</button>
+                </div>
+                <div class="section__calculator-button-flex">
+                    <button class="section__calculator-button-number btn" id="zero">0</button>
+                    <button class="section__calculator-button-number btn">.</button>
+                    <button class="section__calculator-button-right btn">=</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./js/script.js"></script>
+</body>
+</html>

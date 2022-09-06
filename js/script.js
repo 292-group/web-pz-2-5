@@ -2,6 +2,7 @@ let a = '';
 let b = '';
 let sing = '';
 let finish = false;
+let copyNumber = '';
 
 const digit = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '.'];
 const action = ['-', '+', '*', '/'];
@@ -91,5 +92,20 @@ document.querySelector('.section__calculator-buttons').onclick = (event) => {
     if (key === '%') {
         b = a * (b / 100);
         out.textContent = b;
+    }
+    if (key === 'copy') {
+        copyNumber = a;
+        out.textContent = a;
+    }
+    if (key === 'paste') {
+        if (a !== '') {
+            b = copyNumber;
+            out.textContent = b;
+        }
+        else if (a === '') {
+            a = copyNumber;
+            out.textContent = a;
+        }
+
     }
 }

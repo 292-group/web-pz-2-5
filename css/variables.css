@@ -1,4 +1,5 @@
 :root{
+    /*normal*/
 --backgraund:rgb(0, 0, 0);
 --color-number: rgb(68, 68, 68);
 --color-right:rgb(202, 143, 33);
@@ -10,7 +11,7 @@
 --color-right-focus:rgb(228, 227, 227);
 --color-right-num-focus:rgb(0, 0, 0);
 --color-button-hover:rgb(129, 129, 129);
-
+    /*custom*/
 --backgraund-custom:rgb(182, 182, 182);
 --color-number-custom: rgb(245, 237, 237);
 --color-right-custom:rgb(202, 33, 151);
@@ -22,7 +23,7 @@
 --color-right-focus-custom:rgb(63, 62, 62);
 --color-right-num-focus-custom:rgb(216, 129, 129);
 --color-button-hover-custom:rgb(129, 129, 129);
-
+   /*custom_2*/
 --backgraund-custom_2:rgb(206, 203, 52);
 --color-number-custom_2: rgb(35, 58, 107);
 --color-right-custom_2:rgb(255, 84, 5);
@@ -34,6 +35,4 @@
 --color-right-focus-custom_2:rgb(85, 85, 85);
 --color-right-num-focus-custom_2:rgb(0, 0, 0);
 --color-button-hover-custom_2:rgb(241, 97, 97);
-
-
 }

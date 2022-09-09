@@ -41,40 +41,86 @@
       }
     }
     if(action.includes(key)){
+      if(sign==''){
       sign=key;
       out.textContent=sign;
+   }
+   // console.log(`a=${a},sign=${sign},b=${b}`)
+
+      if(a!==''&&b!==''&&sign!==''){
+         switch(sign){
+            case '+':
+            a= (+a) + (+b) ;
+            
+            break;
+               case '-':
+                  a= a - b;
+                  break;
+                  case '×':
+                     a= a * b;
+                     break;
+                     case '+':
+                        a= a + b;
+                        break;
+                        case '÷':
+                           if(b==='0'){
+                              out.textContent="Помилочка:("
+                              a=''
+                              b=''
+                              sign=''
+                              return;
+                           }
+                           a= a / b;
+                           break;
+   }
+   console.log(`a=${a},sign=${sign},b=${b}`)
+   sign=key;
+   out.textContent=sign;
+
+   finish=true;
+       }
       return;
+      
     }
     if(key==='='){
       if(b==='') b=a 
-      switch(sign){
-               case '+':
-               a= (+a) + (+b) ;
-               break;
-                  case '-':
-                     a= a - b;
+      else if(a!==''&&b!==''&&sign!==''){
+         switch(sign){
+            case '+':
+            a= (+a) + (+b) ;
+            
+            break;
+               case '-':
+                  a= a - b;
+                  break;
+                  case '×':
+                     a= a * b;
                      break;
-                     case '×':
-                        a= a * b;
+                     case '+':
+                        a= a + b;
                         break;
-                        case '+':
-                           a= a + b;
+                        case '÷':
+                           if(b==='0'){
+                              out.textContent="Помилочка:("
+                              a=''
+                              b=''
+                              sign=''
+                              return;
+                           }
+                           a= a / b;
                            break;
-                           case '÷':
-                              if(b==='0'){
-                                 out.textContent="Помилочка:("
-                                 a=''
-                                 b=''
-                                 sign=''
-                                 return;
-                              }
-                              a= a / b;
-                              break;
-      }
-      finish=true;
+   }
+   console.log(`a=${a},sign=${sign},b=${b}`)
+   sign=key;
+   out.textContent=sign;
+
+   finish=true;
+       }
+    
       out.textContent=a;
     
     }
+   
     if(key==='+/-'){
       if(a!=='0'&&sign===''){
          a=-a;

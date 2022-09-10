@@ -1,0 +1,65 @@
+@import "reset";
+@import "variables";
+
+body{
+  min-width: 400px;
+  background-color: $bg-main-color;
+}
+
+table{
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+tr {
+  margin-bottom: 10px;
+}
+
+.sov_result {
+  font-size: 60px;
+  height: 80px;
+  width: 375px;
+  text-align: right;
+  color: white;
+  border: none;
+  background: transparent;
+}
+.sov_button {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border-style: none;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: white;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.sov_button_zero {
+  height: 80px;
+  width: 185px;
+  border-radius: 40px;
+  background-color: var(--button-primary);
+  color: white;
+  border-style: none;
+  font-size: 32px;
+  font-weight: 600;
+  text-align: left;
+  padding-left: 35px;
+}
+
+.sov_button_grey {
+  background-color: var(--button-primary);
+  color: white;
+}
+
+.sov_button_grey_light {
+  background-color: var(--button-primary-light);
+  color: black;
+}
+
+.sov_button_orange {
+  background-color: var(--button-secondary);
+}

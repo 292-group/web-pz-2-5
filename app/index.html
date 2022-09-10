@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-dark">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--  <link rel="stylesheet" type="text/css" href="./css/variable.css">-->
+  <link rel="stylesheet" type="text/css" href="./css/app.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.js"></script>
+  <script src="./js/calculator.js"></script>
+  <title>Calculator</title>
+</head>
+<body>
+  <table>
+    <tr>
+      <td colspan="4"><input class="sov_result" type="text" id="result"></td>
+    </tr>
+    <tr>
+      <td><button class="sov_button sov_button_grey_light" type="button" onclick="clr()">AC</button></td>
+      <td><button class="sov_button sov_button_grey_light" type="button" onclick="prntAction('+/-')">+/-</button></td>
+      <td><button class="sov_button sov_button_grey_light" type="button" onclick="prntAction('%')">%</button></td>
+      <td><button class="sov_button sov_button_orange" type="button" onclick="prntAction('/')">/</button></td>
+    </tr>
+    <tr>
+      <td><button class="sov_button sov_button_grey" type="button" onclick="prnt('7')">7</button></td>
+      <td><button class="sov_button sov_button_grey" type="button" onclick="prnt('8')">8</button></td>
+      <td><button class="sov_button sov_button_grey" type="button" onclick="prnt('9')">9</button></td>
+      <td><button class="sov_button sov_button_orange" type="button" onclick="prntAction('*')">*</button></td>
+    </tr>
+    <tr>
+      <td><button class="sov_button sov_button_grey" type="button" onclick="prnt('4')">4</button></td>
+      <td><button class="sov_button sov_button_grey" type="button" onclick="prnt('5')">5</button></td>
+      <td><button class="sov_button sov_button_grey" type="button" onclick="prnt('6')">6</button></td>
+      <td><button class="sov_button sov_button_orange" type="button" onclick="prntAction('-')">-</button></td>
+    </tr>
+    <tr>
+      <td><button class="sov_button sov_button_grey" type="button" onclick="prnt('1')">1</button></td>
+      <td><button class="sov_button sov_button_grey" type="button" onclick="prnt('2')">2</button></td>
+      <td><button class="sov_button sov_button_grey" type="button" onclick="prnt('3')">3</button></td>
+      <td><button class="sov_button sov_button_orange" type="button" onclick="prntAction('+')">+</button></td>
+    </tr>
+    <tr>
+      <td colspan="2"><button class="sov_button_zero sov_button_grey" type="button" onclick="prnt('0')">0</button></td>
+      <td><button class="sov_button sov_button_grey" type="button" onclick="prntAction('.')">.</button></td>
+      <td><button class="sov_button sov_button_grey" type="button" onclick="solve()">=</button></td>
+    </tr>
+    <tr>
+      <td colspan="2"><button class="sov_button_zero sov_button_grey" type="button" onclick="toggleTheme()">theme</button></td>
+      <td><button class="sov_button sov_button_grey" type="button" onclick="getCookie()">↓</button></td>
+      <td><button class="sov_button sov_button_grey" type="button" onclick="setCookie()">↑</button></td>
+    </tr>
+  </table>
+</body>
+</html>

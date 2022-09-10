@@ -1,0 +1,13 @@
+$bg-main-color: #181717;
+
+.theme-dark {
+  --button-primary: #4c4c4c;
+  --button-primary-light:#a9a8a8;
+  --button-secondary:rgb(255, 135, 6);
+}
+
+.theme-light {
+  --button-primary: #a9a8a8;
+  --button-primary-light: white;
+  --button-secondary: #4c4c4c;
+}

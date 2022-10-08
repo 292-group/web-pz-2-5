@@ -2,7 +2,7 @@
 
 # compiled output
 /dist
-/app/css
+
 /gzipped
 /tmp
 /out-tsc

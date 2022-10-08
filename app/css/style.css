@@ -1,0 +1,239 @@
+body{
+    background-color:rgb(40, 40, 40);
+}
+.calculator_container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    background-image:url('background.png');
+    background-color: transparent;
+    background-size:cover;
+}
+.calculator_iphone{
+    background-color:#000;
+    border-radius:20px;
+    padding:5px;
+    /* box-shadow: -10px -10px 15px rgba(255,255,255,0.5),
+    10px 10px 15px rgba(0,0,0,0.5);*/
+} 
+
+.calculator_input_display{
+    width: 288px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+/* #calculator_input_Number_Previews{
+    width: 275px;
+    height:100%;
+    outline:none;
+    background-color:#000;
+    border:none;
+    color:#fff;
+    font-size:20px;
+    overflow-y:hidden;
+    text-align: right;
+    resize:none;
+    display:flex;
+    flex-direction: row-reverse;
+    padding:30px 0px 0px 0px ;
+    color:#dbd8d3;
+
+}
+#calculator_input_Number{
+    width: 275px;
+    height: 100px;
+    outline:none;
+    background-color:#000;
+    color:#fff;
+    border:none;
+    font-size: 40px;
+    overflow-y: hidden;
+    text-align: right;
+    resize: none;
+} */
+.sov_result {
+    font-size: 60px;
+    height: 80px;
+    width: 375px;
+    text-align: right;
+    color: white;
+    border: none;
+    background: transparent;
+  }
+/**button design ***********/
+.calculator_button{
+    display: flex;
+    flex-direction:row;
+}
+
+.calculator_button_left3_Top{
+    display: flex;
+    flex-direction: row;
+}
+
+/*** button size all  using multiple classes ****/
+.calculator_button_FixedSize_Top,
+.calculator_button_Fixedsize_Number,
+.calculator_button_FixedSize_bottom,
+.calculator_button_FixedSize_Orange{
+    width: 60px;
+    height: 60px;
+    border-radius:60px;
+    display:flex;
+    align-items:center;
+    text-align:center;
+    justify-content: center;
+    font-size: 25px;
+    margin:5px;
+    
+
+}
+
+
+
+/****color give to button**********/
+.calculator_button_FixedSize_Top{
+    background-color: rgb(149, 149, 149);
+}
+.calculator_button_Fixedsize_Number{
+    background-color: rgb(57, 57, 57);
+}
+.calculator_button_FixedSize_bottom{
+    background-color:rgb(57, 57, 57);
+
+}
+.calculator_button_FixedSize_Orange{
+    background-color:orange;
+    color:#fff;
+    font-size: 30px;
+}
+
+
+
+
+.calculator_button_left_Number{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 218px;
+    color:white;
+}
+.calculator_button_left3_bottom{
+    display: flex;
+    flex-direction: row;
+    color:white;
+}
+#calculator_button_FixedSize_bottom_zero{
+    width: 130px;
+    align-items: left;
+    text-align: left;
+}
+.calculator_button_Right{
+    display: flex;
+    flex-direction: column;
+}
+.caclculator_bottom_save{
+    display: flex;
+    flex-direction: row;
+}
+#save{
+    width: 130px;
+    align-items: left;
+    text-align: left;
+    color: #dbd8d3;
+}
+#paste{
+    width: 130px;
+    align-items: left;
+    text-align: left;
+    color: #dbd8d3;
+}
+/* #toggle{
+    width: 130px;
+    align-items: left;
+    text-align: left;
+    color: #dbd8d3;
+} */
+.theme-toggler {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.theme-toggler.active {
+    color: #333;
+}
+
+.theme-toggler.active::before {
+    background-color: #fff;
+}
+
+.theme-toggler::before {
+    content: '';
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: #333;
+    z-index: -1;
+}
+
+
+/* Light */
+
+.calculator_iphone.light {
+    background-color: white;
+}
+.calculator_iphone.light .sov_result {
+    font-size: 60px;
+    height: 80px;
+    width: 375px;
+    text-align: right;
+    color: red;
+    border: none;
+    background: transparent;
+  }
+/* .calculator_iphone.light .calculator_input_display{
+    width: 288px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    background-color: #fff;
+}
+.calculator_iphone.light #calculator_input_Number_Previews{
+    background-color: #fff;
+    color: #000;
+} */
+/* .calculator_iphone.light #calculator_input_Number{
+    background-color: #fff;
+    color: #FF0056;
+} */
+.calculator_iphone.light .calculator_button_FixedSize_Top{
+    background-color:#655392;
+}
+.calculator_iphone.light .calculator_button_Fixedsize_Number{
+    background-color: #2F195A;
+}
+.calculator_iphone.light .calculator_button_FixedSize_bottom{
+    background-color: #2F195A;
+
+}
+.calculator_iphone.light .calculator_button_FixedSize_Orange{
+    background-color: #804B8D;
+    color:#fff;
+    font-size: 30px;
+}

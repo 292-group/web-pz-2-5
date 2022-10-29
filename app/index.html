@@ -28,22 +28,22 @@
 
                         <!--middle button number-->
                         <div class="calculator_button_left_Number">
-                            <button class="calculator_button_Fixedsize_Number" type="button" onclick="prnt('9')">9</button>
-                            <button class="calculator_button_Fixedsize_Number" type="button" onclick="prnt('8')">8</button>
-                            <button class="calculator_button_Fixedsize_Number" type="button" onclick="prnt('7')">7</button>
+                            <button class="calculator_button_Fixedsize_Number" type="button" id="numbers" onclick="prnt('9')">9</button>
+                            <button class="calculator_button_Fixedsize_Number" type="button" id="numbers" onclick="prnt('8')">8</button>
+                            <button class="calculator_button_Fixedsize_Number" type="button" id="numbers" onclick="prnt('7')">7</button>
 
-                            <button class="calculator_button_Fixedsize_Number" type="button" onclick="prnt('6')">6</button>
-                            <button class="calculator_button_Fixedsize_Number" type="button" onclick="prnt('5')">5</button>
-                            <button class="calculator_button_Fixedsize_Number" type="button" onclick="prnt('4')">4</button>
+                            <button class="calculator_button_Fixedsize_Number" type="button" id="numbers" onclick="prnt('6')">6</button>
+                            <button class="calculator_button_Fixedsize_Number" type="button" id="numbers" onclick="prnt('5')">5</button>
+                            <button class="calculator_button_Fixedsize_Number" type="button" id="numbers" onclick="prnt('4')">4</button>
 
-                            <button class="calculator_button_Fixedsize_Number" type="button" onclick="prnt('3')">3</button>
-                            <button class="calculator_button_Fixedsize_Number" type="button" onclick="prnt('2')">2</button>
-                            <button class="calculator_button_Fixedsize_Number" type="button" onclick="prnt('1')">1</button>
+                            <button class="calculator_button_Fixedsize_Number" type="button" id="numbers" onclick="prnt('3')">3</button>
+                            <button class="calculator_button_Fixedsize_Number" type="button" id="numbers" onclick="prnt('2')">2</button>
+                            <button class="calculator_button_Fixedsize_Number" type="button" id="numbers" onclick="prnt('1')">1</button>
                         </div>
 
                         <!--bottom button left-->
                         <div class="calculator_button_left3_bottom">
-                            <button class="calculator_button_FixedSize_bottom" type="button" id="calculator_button_FixedSize_bottom_zero" onclick="prnt('0')">0</button>
+                            <button class="calculator_button_FixedSize_bottom" type="button" id="calculator_button_FixedSize_bottom_zero" id="numbers" onclick="prnt('0')">0</button>
                             <button class="calculator_button_FixedSize_bottom" type="button" onclick="prntAction('.')">.</button>
                         </div>
                         
@@ -62,6 +62,7 @@
                     <div class="calculator_bottom_save"> 
                         <button class="calculator_button_FixedSize_bottom" type="button" id="save" onclick="setCookie()">COPY</button>
                         <button class="calculator_button_FixedSize_bottom" type="button" id="paste" onclick="getCookie()">PASTE</button>
+                        <button class="calculator_button_FixedSize_bottom" type="button" id = "Fac" onclick="onClickFactorial()" >!</button>
                         
                     </div> 
                     
@@ -72,7 +73,7 @@
         </div>
 
         <!--javascript file link html file-->
-        <script src="js/Calculator.js"></script>
+        <script src="./js/Calculator.js"></script>
         
     </body>
 </html>

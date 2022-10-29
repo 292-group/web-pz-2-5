@@ -66,3 +66,15 @@ function getCookie() {
   }
   return null;
 }
+// function onClickFac() {
+//     const val = document.getElementById("result").value; 
+//   document.getElementById("result").value = val * val;
+
+// }
+function onClickFactorial() {
+  let val = document.getElementById("result").value; 
+  for (i = val - 1; i >= 1; i--) {
+  val *= i;
+  }
+return document.getElementById("result").value = val;
+}

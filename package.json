@@ -32,6 +32,7 @@
     "gulp-sourcemaps": "^3.0.0",
     "gulp-uglifyjs": "^0.6.2",
     "imagemin-pngquant": "^9.0.2",
-    "sass": "^1.41.1"
+    "sass": "^1.41.1",
+    "mathjs": "^10.6.4"
   }
 }

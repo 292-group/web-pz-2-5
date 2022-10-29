@@ -27,7 +27,7 @@ function solve() {
   if (document.getElementById("result").value.length !== 0)
     {
       let x = document.getElementById("result").value
-      let y = math.evaluate(x)
+      let y = eval(x)
       document.getElementById("result").value = y
     }
 }

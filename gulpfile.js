@@ -32,20 +32,11 @@ gulp.task('browser-sync', function () {
 });
 
 gulp.task('js-dev', function () {
-  return gulp.src([
-    'app/libs/somelibs.js'
-  ])
-    .pipe(concat('bundle.js'))
-    .pipe(gulp.dest('app/js'));
+
 });
 
 gulp.task('js-prod', function () {
-  return gulp.src([
-    'app/libs/somelibs.js'
-  ])
-    .pipe(concat('bundle.js'))
-    .pipe(uglify())
-    .pipe(gulp.dest('app/js'));
+
 });
 
 gulp.task('code', function () {
@@ -94,7 +85,7 @@ gulp.task('clear', function (callback) {
 gulp.task('watch', function () {
   gulp.watch('app/scss/**/*.scss', gulp.parallel('sass'));
   gulp.watch('app/*.html', gulp.parallel('code'));
-  gulp.watch(['app/js/index.js', 'app/libs/**/*.js'], gulp.parallel('js-dev'));
+  gulp.watch(['app/js/index.js'], gulp.parallel('js-dev'));
 });
 
 gulp.task('default', gulp.parallel('sass', 'js-dev', 'browser-sync', 'watch'));

@@ -1,102 +1,76 @@
-.main{
-    border-radius: 30px;
-    height: 1020px;
-    width: 600px;
+/*@import url(https://fonts.googleapis.com/css?family=Roboto:100); */
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-.calc_screen{
-    width: 550px;
-    height:130px;
-    margin: 20px 30px 0px 30px;
-    font-size: 100px;
-    text-align: right;
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
 }
 
-.act_btn button{
-    width: 100px;
-    height: 50px;
-    border-radius: 40px;
+html {
+  font-family: 'Roboto';
+  font-weight: 100;
 }
 
-.act_btn{
-    padding-top: 20px;
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 350px 120px 100px ;
+body {
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+  font-size: 2em;
+  background-color: #bbb;
 }
-
-.btn{
-    border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    margin: 10px;
-    font-size: 50px;
-    text-align: center;
-}
-
-.all_btn{
-    padding: 10px;
-}
-
-.double_btn{
-    width: 266px;
-    border-radius: 60px;
-    text-align: left;
-    padding-left: 45px;
-}
-
-.orange_clr{
-    color: white;
-    background-color: orange;
-}
-
-/* light theme */
 
 .calculator {
-    background-color: rgb(229, 229, 229);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 300px;
+  box-shadow: 0px 3px 10px 3px #aaa;
+  border-right: 0.01em solid #333;
+  border-bottom: 0.01em solid #333;
 }
 
-.calculator #display {
-    color: #0a1e23;
-
+.result {
+  width: 100%;
+  background-color: #000;
+  min-height: 2em;
+  color: white;
 }
 
-.calculator #clear button {
-    background-color: black;
-    color: white;
+.result > p {
+  padding: 0 1em;
+  text-align: right;
+  line-height: 2em;
 }
 
-.calculator .all_btn .grey_clr{
-    color: white;
-    background-color: rgb(44, 44, 44);
+span {
+  box-sizing: border-box;
+  text-align: center;
+  cursor: pointer;
+  width: 25%;
+  background-color: #ccc;
+  line-height: 2em;
+  border-radius: 40px;
 }
 
-.calculator .all_btn .blck_clr{
-    color: black;
-    background-color: rgb(195, 195, 195);
+.operator {
+  background-color: #FF9500;
+  color: white;
 }
 
-  /* dark theme */
-
-.calculator.dark {
-    background-color: #071115;
+.double {
+  width: 50%;
 }
 
-.calculator.dark #clear  button{
-    background-color: white;
-    color: #110708;
+.grey {
+  background-color: #aaa;
 }
 
-.calculator.dark #display {
-    color: #f8fafb;
-}
-
-.calculator.dark .all_btn .grey_clr{
-    color: black;
-    background-color: rgb(195, 195, 195);
-}
-
-.calculator.dark .all_btn .blck_clr{
-    color: white;
-    background-color: rgb(44, 44, 44);
+.clicked {
+  background-color: darken(orange, 10%);
 }

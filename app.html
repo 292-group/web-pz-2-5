@@ -5,42 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./app.css">
-    <title>Calculater</title>
+    <title>Calculat</title>
 </head>
 <body>
-    <div class="main calculator dark">
-        <div class="act_btn active" id="clear">
-        <button class="theme  theme-toggler toggler-icon ">theme</button>
-        <button class="save ">save</button>
-        <button class="paste ">paste</button>
-    </div>
-    <div class="inpt">
-   <div class="calc_screen " id="display">
-    <p class="output">0</p>
-   </div>
-    </div>
-    <div class="all_btn">
-        <button class="btn ac grey_clr ">AC</button>
-        <button class="btn mnspls grey_clr">+/-</button>
-        <button class="btn grey_clr">%</button>
-        <button class="btn orange_clr">÷</button>
-        <button class="btn blck_clr ">7</button>
-        <button class="btn blck_clr">8</button>
-        <button class="btn blck_clr">9</button>
-        <button class="btn orange_clr">×</button>
-        <button class="btn blck_clr">4</button>
-        <button class="btn blck_clr">5</button>
-        <button class="btn blck_clr">6</button>
-        <button class="btn orange_clr">-</button>
-        <button class="btn blck_clr">1</button>
-        <button class="btn blck_clr">2</button>
-        <button class="btn blck_clr">3</button>
-        <button class="btn orange_clr">+</button>
-        <button class="btn double_btn blck_clr">0</button>
-        <button class="btn blck_clr">.</button>
-        <button class="btn orange_clr">=</button>
-    </div>
-</div>
+    <div id="calculator" class="calculator">
+        <div class="result"><p></p></div>
+        
+        <span class="clear grey">AC</span>
+        <span class="grey">+/-</span>
+        <span class="grey">%</span>
+        <span class="operator">÷</span>
+      
+        <span>7</span>
+        <span>8</span>
+        <span>9</span>
+        <span class="operator">x</span>
+        
+        <span>4</span>
+        <span>5</span>
+        <span>6</span>
+        <span class="operator">-</span>
+        
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span class="operator">+</span>
+        
+        <span class="double">0</span>
+        <span>.</span>
+        <span class="operator">=</span>
+        
+      </div>
 <script src="./calculator.js"></script>
 </body>
 </html>

@@ -1,3 +1,4 @@
+let theme = true
 window.onload = function() {
    var buttons = document.getElementsByTagName('span'), // Select all buttons
      result = document.querySelectorAll('.result p')[0], // Select the result-field
@@ -156,4 +157,27 @@ window.onload = function() {
        equation.pop();
      }
    }
- };
+
+const btn = document.querySelector(".btn-toggle");
+btn.addEventListener("click", function () {
+  document.body.classList.toggle("dark");
+});
+};
+
+// function toggle(){
+//   if(theme){
+//     let elem = document.querySelectorAll(".grey")
+//     for(let i=0;i<elem.length;i++){
+//       elem[i].classList.add("changed")
+//     elem[i].classList.remove("grey")
+//     }
+//     theme=false
+//   }else{
+//     let elem = document.querySelectorAll(".changed")
+//     for(let i=0;i<elem.length;i++){
+//       elem[i].classList.add("grey")
+//     elem[i].classList.remove("changed")
+//     }
+//     theme=true
+//   }
+//}

@@ -32,6 +32,13 @@ html {
   width: 50%;
 }
 
+.btn-toggle {
+  background-color: #FF9500;
+  color: white;
+  margin-left: auto;
+  margin: right 100px;
+}
+
 /* dark theme */
 
 .dark {

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <script src="./js/calculator.js"></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="main-content">
+        <div class="calculator">
+            <div class="calculator__input">
+                <p class="calculator__input__field"></p></p>
+            </div>
+            
+            <div class="keyboard">
+                <div class="keyboard__holder">
+                    <div class="keyboard__row">
+                        <button class="keyboard__button keyboard__button_light-grey" type="button" onclick="ac()">AC</button>
+                        <button class="keyboard__button keyboard__button_light-grey" type="button" onclick="changeSign()">+/-</button>
+                        <button class="keyboard__button keyboard__button_light-grey" type="button" onclick="percent()">%</button>
+                        <button class="keyboard__button keyboard__button_orange" type="button" type="button" onclick="getAction(this)">÷</button>
+                    </div>
+                    <div class="keyboard__row">
+                        <button class="keyboard__button keyboard__button_grey" type="button" onclick="takeNumber(this)">7</button>
+                        <button class="keyboard__button keyboard__button_grey" type="button" onclick="takeNumber(this)">8</button>
+                        <button class="keyboard__button keyboard__button_grey" type="button" onclick="takeNumber(this)">9</button>
+                        <button class="keyboard__button keyboard__button_orange" type="button" onclick="getAction(this)">×</button>
+                    </div>
+                    <div class="keyboard__row">
+                        <button class="keyboard__button keyboard__button_grey" type="button" onclick="takeNumber(this)">4</button>
+                        <button class="keyboard__button keyboard__button_grey" type="button" onclick="takeNumber(this)">5</button>
+                        <button class="keyboard__button keyboard__button_grey" type="button" onclick="takeNumber(this)">6</button>
+                        <button class="keyboard__button keyboard__button_orange" type="button" onclick="getAction(this)">-</button>
+                    </div>
+                    <div class="keyboard__row">
+                        <button class="keyboard__button keyboard__button_grey" type="button" onclick="takeNumber(this)">1</button>
+                        <button class="keyboard__button keyboard__button_grey" type="button" onclick="takeNumber(this)">2</button>
+                        <button class="keyboard__button keyboard__button_grey" type="button" onclick="takeNumber(this)">3</button>
+                        <button class="keyboard__button keyboard__button_orange" type="button" onclick="getAction(this)">+</button>
+                    </div>
+                    <div class="keyboard__row">
+                        <button class="keyboard__button_long keyboard__button_grey"type="button" onclick="takeNumber(this)">0</button>
+                        <button class="keyboard__button keyboard__button_grey" type="button" onclick="takeNumber(this)">.</button>
+                        <button class="keyboard__button keyboard__button_orange"type="button" onclick="calculate()">=</button>
+                    </div>
+                    <div class="keyboard__row">
+                        <button class="keyboard__button_cookie_copy keyboard__button_light-grey"type="button" onclick="copy()">COPY</button>
+                        <button class="keyboard__button_cookie_paste keyboard__button_orange"type="button" onclick="paste()">PASTE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

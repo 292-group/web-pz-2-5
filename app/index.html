@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title>calculator</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.js"></script>
+    </head>
+    <body>
+        <div class="calculator_container">
+            <div class="theme-toggler active">
+                <i class="toggler-icon"></i>
+            </div>
+            <div class="calculator_iphone">
+                <!--display the number-->
+                <!-- <div class="calculator_input_display"> -->
+                    <input class="sov_result" type="text" id="result">
+                <!-- </div> -->
+                <!--calculator button-->
+
+                <div class="calculator_button">
+                    <!--left button-->
+                    <div class="calculator_button_left3">
+                        <div class="calculator_button_left3_Top">
+                            <!--clear the input box-->
+                            <button class="calculator_button_FixedSize_Top" type="button" id="Calculator_input_AC" onclick="clr()">AC</button>
+                            <button class="calculator_button_FixedSize_Top" type="button" onclick="prntAction('+/-')">+/-</button>
+                            <button class="calculator_button_FixedSize_Top" type="button" onclick="prntAction('%')">%</button>
+                        </div>
+
+                        <!--middle button number-->
+                        <div class="calculator_button_left_Number">
+                            <button class="calculator_button_Fixedsize_Number" type="button" id="numbers" onclick="prnt('9')">9</button>
+                            <button class="calculator_button_Fixedsize_Number" type="button" id="numbers" onclick="prnt('8')">8</button>
+                            <button class="calculator_button_Fixedsize_Number" type="button" id="numbers" onclick="prnt('7')">7</button>
+
+                            <button class="calculator_button_Fixedsize_Number" type="button" id="numbers" onclick="prnt('6')">6</button>
+                            <button class="calculator_button_Fixedsize_Number" type="button" id="numbers" onclick="prnt('5')">5</button>
+                            <button class="calculator_button_Fixedsize_Number" type="button" id="numbers" onclick="prnt('4')">4</button>
+
+                            <button class="calculator_button_Fixedsize_Number" type="button" id="numbers" onclick="prnt('3')">3</button>
+                            <button class="calculator_button_Fixedsize_Number" type="button" id="numbers" onclick="prnt('2')">2</button>
+                            <button class="calculator_button_Fixedsize_Number" type="button" id="numbers" onclick="prnt('1')">1</button>
+                        </div>
+
+                        <!--bottom button left-->
+                        <div class="calculator_button_left3_bottom">
+                            <button class="calculator_button_FixedSize_bottom" type="button" id="calculator_button_FixedSize_bottom_zero" id="numbers" onclick="prnt('0')">0</button>
+                            <button class="calculator_button_FixedSize_bottom" type="button" onclick="prntAction('.')">.</button>
+                        </div>
+                        
+                        
+                    </div>
+                    <!--right button -->
+                    <div class="calculator_button_Right">
+                        <button class="calculator_button_FixedSize_Orange" type="button" onclick="prntAction('/')">÷</button>
+                        <button class="calculator_button_FixedSize_Orange" type="button" onclick="prntAction('*')">×</button>
+                        <button class="calculator_button_FixedSize_Orange" type="button" onclick="prntAction('-')">-</button>
+                        <button class="calculator_button_FixedSize_Orange" type="button" onclick="prntAction('+')">+</button>
+                        <!--answer button-->
+                        <button class="calculator_button_FixedSize_Orange" type="button" onclick="solve()">=</button>
+                        
+                    </div>
+                    <div class="calculator_bottom_save"> 
+                        <!-- <button class="calculator_button_FixedSize_bottom" type="button" id="save" onclick="setCookie()">COPY</button>
+                        <button class="calculator_button_FixedSize_bottom" type="button" id="paste" onclick="getCookie()">PASTE</button>
+                        <button class="calculator_button_FixedSize_bottom" type="button" id = "Fac" onclick="onClickFactorial()" >!</button> -->
+                        
+                    </div> 
+                    
+
+                </div>
+                
+            </div>
+        </div>
+
+        <!--javascript file link html file-->
+        <script src="./js/Calculator.js"></script>
+        
+    </body>
+</html>

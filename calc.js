@@ -27,7 +27,7 @@ let a='';
     if(digit.includes(key)){
       if(b==='' && sign ===''){
         a+=key;
-        out.textContent=a;
+        out.textContent=a; 
       }
       else if(a!=='' && b!=='' &&finish)
       {

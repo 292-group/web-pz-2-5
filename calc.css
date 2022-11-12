@@ -6,7 +6,12 @@
     white #fdfdfd
 */
 
-
+.btn-toggle {
+    background-color: #FF9500;
+    color: white;
+    margin-left: auto;
+    margin: right 100px;
+  }
 .calc {
     width: 300px;
     height: 500px;
@@ -84,10 +89,6 @@
     background-color: #ff9501;
 }
 
-.btn.ac {
-    
-}
-
 .btn.plus-minus {
     grid-area: plus-minus;
 }
@@ -104,4 +105,31 @@
     grid-area: zero;
     width: 100%;
     border-radius: 34px;
+}
+
+.btn-toggle{
+    padding-top: 10px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    font-size: 15px;
+    height: 50px;
+    justify-content: center;
+    transition: filter .3s;
+    width: 50px;
+}
+
+.calc.dark {
+    width: 300px;
+    height: 500px;
+    border: 1px solid rgb(150, 143, 143);
+    margin: 50px auto;
+    background: rgb(151, 75, 75);
+    border-radius: 20px;
+    color: #5f2f2f;
+    font-family: Arial;
+    display: grid;
+    padding: 18px;
+    box-shadow: 4px 4px 6px #d8d0d0;
 }

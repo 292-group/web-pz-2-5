@@ -2,6 +2,7 @@ let a = ''; // first number
 let b = ''; // secont number
 let sign = ''; // знак операции
 let finish  = false;
+let themre = true
 
 const digit = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '.'];
 const action = ['-', '+', 'X', '/'];
@@ -59,7 +60,7 @@ document.querySelector('.buttons').onclick = (event) => {
     if (a===null && b===null){
         a= a
     }
-
+   
     // нажата =
     if (key === '=') {
         if (b ==='') b = a;
@@ -88,6 +89,12 @@ document.querySelector('.buttons').onclick = (event) => {
         out.textContent = a;
         console.table(a, b , sign);
 
-    }
+    };
+};
 
-}
+const btn = document.querySelector(".btn-toggle");
+let isDark = true;
+btn.onclick = () => {
+    btn.classList.toggle("dark");
+    isLight = !isDark;
+};

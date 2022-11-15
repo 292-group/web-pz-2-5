@@ -8,7 +8,7 @@
 
 .btn-toggle {
     background-color: #FF9500;
-    color: white;
+    color: red;
     margin-left: auto;
     margin: right 100px;
   }
@@ -109,7 +109,7 @@
 
 .btn-toggle{
     padding-top: 10px;
-    background: white;
+    background: rgb(245, 2, 2);
     border-radius: 50%;
     cursor: pointer;
     display: flex;
@@ -120,16 +120,28 @@
     width: 50px;
 }
 
-.calc.dark {
-    width: 300px;
-    height: 500px;
-    border: 1px solid rgb(150, 143, 143);
-    margin: 50px auto;
-    background: rgb(151, 75, 75);
-    border-radius: 20px;
-    color: #5f2f2f;
-    font-family: Arial;
-    display: grid;
-    padding: 18px;
-    box-shadow: 4px 4px 6px #d8d0d0;
+ 
+
+
+
+
+
+
+
+
+.calculator {
+    background-color: rgb(229, 229, 229);
 }
+
+.calculator #display {
+    color: #0a1e23;
+
+}
+
+
+
+  /* dark theme */
+
+  .calculator.dark {
+    background-color: #071115;
+  }

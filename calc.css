@@ -8,7 +8,7 @@
 
 .btn-toggle {
     background-color: #FF9500;
-    color: red;
+    color: rgb(255, 255, 255);
     margin-left: auto;
     margin: right 100px;
   }
@@ -25,7 +25,10 @@
     padding: 18px;
     box-shadow: 4px 4px 6px #4f4f4f;
 }
-
+.butt{
+    width: 100%;
+    display: flex
+}
 .calc-screen {
     height: 125px;
     /* padding: 18px; */
@@ -118,6 +121,7 @@
     justify-content: center;
     transition: filter .3s;
     width: 50px;
+    margin: 0 auto;
 }
 
  

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,13 +8,18 @@
     <link rel="stylesheet" href="calc.css">
     <title>Calc</title>
 </head>
-<body>
-    <div class="calc main calculator dark">
-        
-        <div class="calc-screen">
-            <div class="btn-toggle theme  theme-toggler toggler-icon" > </div>
 
-            <p>0</p>   
+<body>
+    <div class="butt">
+        <button class="btn-toggle theme  theme-toggler toggler-icon" id="theme"> teme </button>
+        <button class="btn-toggle theme  theme-toggler toggler-icon" id="copy"> copy </button>
+        <button class="btn-toggle theme  theme-toggler toggler-icon" id="paste"> past </button>
+
+    </div>
+    <div class="calc main calculator dark">
+
+        <div class="calc-screen">
+            <p id="screen">0</p>
         </div>
         <div class="buttons">
             <div class="btn ac bg-grey">ac</div>
@@ -44,5 +50,7 @@
         </div>
     </div>
     <script src="./calc.js"></script>
+    <script src="./buttons.js"></script>
 </body>
+
 </html>

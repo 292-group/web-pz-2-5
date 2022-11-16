@@ -142,28 +142,24 @@ function Render(e) {
 
 }
 }
+function AssignCopy() {
+  document.cookie = "val=" + document.getElementById("result").innerHTML;
+}
+
 function AssignPaste(e) {
-  console.log(document.getElementById("result").value);
-  document.cookie = "result="+document.getElementById("result").value;
-
-
-}
-
-function AssignCopy(e) {
-  function getCookie() {
-    var name_cook = "result";
-    var spl = document.cookie.split(";");
-    for (var i = 0; i < spl.length; i++) {
-      var c = spl[i];
-      while (c.charAt(0) == " ") {
-        c = c.substring(1, c.length);
-      }
-      if (c.indexOf(name_cook) == 0) {
-        let val = c.substring(name_cook.length, c.length);
-        document.getElementById("result").value = val
-      }
+  var name_cook = "val=";
+  var spl = document.cookie.split(";");
+  for (var i = 0; i < spl.length; i++) {
+    var c = spl[i];
+    while (c.charAt(0) == " ") {
+      c = c.substring(1, c.length);
     }
-
+    if (c.indexOf(name_cook) == 0) {
+      let val = c.substring(name_cook.length, c.length);
+      document.getElementById("result").innerHTML = val
+    }
   }
+  return null;
 }
+
 

@@ -3,6 +3,7 @@ let second_number = "0";
 let result = "0";
 let current_operator;
 let evaluation = [];
+let copy;
 const screen = document.querySelector(".screen");
 const keyboard = document.querySelector(".keyboard");
 
@@ -19,15 +20,21 @@ function onButtonPress (e) {
         case "operator":
             AssignOperation(e)
             break;
+        case "copy":
+            AssignCopy(e)
+            break;
+         case "paste":
+            AssignPaste(e)
+            break;
     }
 
     Render(e);
-}
+
 
 function AssignNumber(e) {
 
     if(evaluation.length <= 1) {
-        first_number = first_number == "0" 
+        first_number = first_number == "0"
             ? e.target.getAttribute("data-value")
             : first_number + e.target.getAttribute("data-value")
 
@@ -60,7 +67,7 @@ function AssignOperation(e) {
     evaluation.splice(1, 1, current_operator);
 }
 
-function Operate() { 
+function Operate() {
     if(current_operator == "%" && evaluation.length) {
         let number = parseInt(evaluation[evaluation.length - 1])
         result =  (number / 100).toString();
@@ -75,14 +82,14 @@ function Operate() {
     }
 
     if(current_operator == "clear") {
-        
+
         if(evaluation.length <= 2) {
             first_number = "0";
             evaluation = [];
             result = "0";
             return;
         }
-    
+
         if(evaluation.length == 3) {
             second_number = "0";
             evaluation = [first_number.toString()]
@@ -117,7 +124,7 @@ function Render(e) {
         case 8:
             screen.style.fontSize = "4.1rem"
             break;
-        case 9: 
+        case 9:
             screen.style.fontSize = "3.65rem"
             break
     }
@@ -132,5 +139,31 @@ function Render(e) {
         ? clear_button.textContent = 'AC'
         : clear_button.textContent = 'C'
 
-    
+
 }
+}
+function AssignPaste(e) {
+  console.log(document.getElementById("result").value);
+  document.cookie = "result="+document.getElementById("result").value;
+
+
+}
+
+function AssignCopy(e) {
+  function getCookie() {
+    var name_cook = "result";
+    var spl = document.cookie.split(";");
+    for (var i = 0; i < spl.length; i++) {
+      var c = spl[i];
+      while (c.charAt(0) == " ") {
+        c = c.substring(1, c.length);
+      }
+      if (c.indexOf(name_cook) == 0) {
+        let val = c.substring(name_cook.length, c.length);
+        document.getElementById("result").value = val
+      }
+    }
+
+  }
+}
+

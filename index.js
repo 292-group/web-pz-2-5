@@ -109,3 +109,15 @@ $('#point').click(() => {
     if (emptyResult()) { append('0.'); }
     else if (!hasChar()) { append('.'); }
 })
+
+
+
+document.getElementById("changer").onclick=function()
+{
+    var x=Math.round(Math.random()*256);
+    var y=Math.round(Math.random()*256);
+    var z=Math.round(Math.random()*256);
+
+    var boxcolor = 'rgb('+x+','+y+','+z+')';
+    document.getElementById("cal").style.backgroundColor=boxcolor;
+}

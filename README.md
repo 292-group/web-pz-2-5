@@ -15,3 +15,4 @@
 * [Стили и классы](https://learn.javascript.ru/styles-and-classes).
 * [Хранение данных в браузере](https://learn.javascript.ru/data-storage).
 * [Введение в браузерные события](https://learn.javascript.ru/introduction-browser-events).
+stgstt
